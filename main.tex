@@ -1,0 +1,35 @@
+% !TeX program = xelatex
+% 西安邮电大学本科毕业设计（论文）英文翻译 —— 主文档
+% 不含封面；编译：双击 build.bat（Windows）或运行 ./build.sh（Linux）
+
+% 优先使用工程自带 fonts/ 字体，缺失时回退系统字体
+\IfFileExists{fonts/simsun.ttc}%
+  {\def\xuptfontset{none}}%
+  {\IfFileExists{C:/Windows/Fonts/simsun.ttc}%
+    {\def\xuptfontset{windows}}%
+    {\def\xuptfontset{fandol}}}
+\documentclass[
+  UTF8,
+  scheme=chinese,
+  punct=kaiming,
+  zihao=-4,
+  openany,
+  oneside,
+  fontset=\xuptfontset
+]{xupttranslation}
+
+\begin{document}
+
+% 文献来源与说明
+\input{frontmatter/source-info}
+
+% 一、英文原文
+\input{chapters/chapter1/english}
+
+% 二、中文译文
+\input{chapters/chapter2/chinese}
+
+% 指导教师签字与日期
+\input{conclusion/signature}
+
+\end{document}

@@ -1,0 +1,45 @@
+# LaTeX 编译中间文件
+*.aux
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.fdb_latexmk
+*.fls
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.ist
+*.glo
+*.gls
+*.glg
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.xdv
+*.tmp
+*.pdfsync
+
+# 只忽略构建产物 PDF
+/main.pdf
+
+# 编辑器与操作系统生成文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时预览目录
+_preview/
